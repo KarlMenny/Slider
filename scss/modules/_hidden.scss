@@ -1,0 +1,27 @@
+.hidden {
+	@include pos($t: 0, $l: -100%);
+	@include size(calc(100% - 40px), 100%);
+	background: rgba(27, 241, 173, 0.9);
+
+	&__wrapper {
+		@include pos($b: 30px, $l: 30px);
+	}
+
+	&__text {
+		text-align: left;
+		font-size: 28px;
+		line-height: 24px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #fff;
+
+		&--margin {
+			margin-bottom: 12px;
+		}
+
+		&--small {
+			font-weight: 600;
+			font-size: 12px;
+		}
+	}
+}
